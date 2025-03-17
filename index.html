@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Anime List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav id="navbar">
+        <div class="logo">Anime List</div>
+        <div class="nav-links">
+            <a href="#" data-page="top">Top Anime</a>
+            <!-- <a href="#" data-page="search">Search</a> -->
+            <a href="#" data-page="favorites">My Favorites</a>
+        </div>
+    </nav>
+
+    <!-- CONTENT SECTION -->
+    <main id="content">
+        <!-- TOP ANIME SECTION -->
+        <section id="top-section">
+            <h2 class="section-title">Top 5 Anime</h2>
+            <div id="loading" class="loading-spinner hidden">Loading...</div>
+            <div id="error-message" class="error-message hidden"></div>
+            <div id="anime-grid" class="anime-grid">
+                <!-- Anime cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- SEARCH SECTION -->
+        <section id="search-section" class="hidden">
+            <h2 class="section-title">Search Anime</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Enter anime title...">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="anime-grid" class="anime-grid">
+                <!-- Search results will be inserted here -->
+            </div>
+        </section>
+
+        <!-- FAVORITES SECTION -->
+        <section id="favorites-section" class="hidden">
+            <h2 class="section-title">My Favorite Anime</h2>
+            <div id="favorites-grid" class="anime-grid">
+                <!-- Favorite anime will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
